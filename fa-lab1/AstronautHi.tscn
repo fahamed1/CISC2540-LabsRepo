@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvb7q1110q2a3"]
+
+[ext_resource type="PackedScene" uid="uid://cmenvywsk6wta" path="res://astronaut.tscn" id="1_k0wg4"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(499.999, 329.125)
+scale = Vector2(1.54688, 1.83774)
+
+[node name="Astronaut2D" parent="." instance=ExtResource("1_k0wg4")]
+position = Vector2(0, 0)
+scale = Vector2(1, 1)

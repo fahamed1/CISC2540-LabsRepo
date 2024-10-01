@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq45sgjnnrhd5"]
+
+[ext_resource type="Texture2D" uid="uid://3fa3hw5heeff" path="res://hand-drawn-planet-illustration-png.webp" id="1_37ven"]
+
+[node name="Planet" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(730, 104)
+scale = Vector2(0.0290084, 0.0289062)
+texture = ExtResource("1_37ven")

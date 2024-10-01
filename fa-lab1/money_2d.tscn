@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtlcs82erbeuw"]
+
+[ext_resource type="Texture2D" uid="uid://0aerfdvrfsy" path="res://3734356.webp" id="1_tmkt6"]
+
+[node name="Money2D" type="Sprite2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 340.0
+offset_top = 500.0
+offset_right = 400.0
+offset_bottom = 546.0
+color = Color(0.466181, 0.466181, 0.466181, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(501.063, 406.875)
+scale = Vector2(0.775631, 0.497222)
+texture = ExtResource("1_tmkt6")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 704.0
+offset_top = 502.0
+offset_right = 822.0
+offset_bottom = 620.0
+text = "Click"

@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdagibdjwy6pl"]
+
+[ext_resource type="Texture2D" uid="uid://pi6vggnvmay2" path="res://space-7709489_640.jpg" id="1_c2n1i"]
+[ext_resource type="Texture2D" uid="uid://tcuh46myq2ev" path="res://space-ship-rocket-cartoon-png.webp" id="2_4agf4"]
+[ext_resource type="Texture2D" uid="uid://cwqbgkrogs13t" path="res://4e027a949fab59725ff11730dde5dfce-space-alien-kawaii-cartoon-character.webp" id="3_v6k2e"]
+[ext_resource type="PackedScene" uid="uid://cmenvywsk6wta" path="res://astronaut.tscn" id="4_kwv73"]
+[ext_resource type="PackedScene" uid="uid://dtlcs82erbeuw" path="res://money_2d.tscn" id="5_sueo1"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Space-7709489640" type="Sprite2D" parent="."]
+position = Vector2(504, 334)
+scale = Vector2(1.55518, 1.82208)
+texture = ExtResource("1_c2n1i")
+
+[node name="Sprite2D" type="Sprite2D" parent="Space-7709489640"]
+position = Vector2(-127.96, 72.4449)
+scale = Vector2(0.0729984, 0.0623694)
+texture = ExtResource("2_4agf4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Space-7709489640"]
+position = Vector2(163.969, -24.1483)
+scale = Vector2(0.192639, 0.178917)
+texture = ExtResource("3_v6k2e")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(499.999, 329.125)
+scale = Vector2(1.54688, 1.83774)
+
+[node name="Astronaut2D" parent="Node2D" instance=ExtResource("4_kwv73")]
+position = Vector2(0, 0)
+scale = Vector2(1, 1)
+
+[node name="Money2D" parent="." instance=ExtResource("5_sueo1")]
