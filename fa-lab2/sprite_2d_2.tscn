@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://73fq3i5rxijg"]
+
+[ext_resource type="Texture2D" uid="uid://bh47yp0t6rjfv" path="res://pngtree-hot-matcha-pixel-png-image_7966201.png" id="1_rghf6"]
+
+[node name="Sprite2D2" type="Sprite2D"]
+position = Vector2(160.514, 20.5283)
+scale = Vector2(0.139904, 0.140231)
+texture = ExtResource("1_rghf6")

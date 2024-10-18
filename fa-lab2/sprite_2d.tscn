@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://e35oahnt7t43"]
+
+[ext_resource type="Texture2D" uid="uid://n0ifpc8ihrg2" path="res://ad9e781a-d396-4a58-8c09-7be4e5bee615_scaled.jpg" id="1_3q0pb"]
+[ext_resource type="Texture2D" uid="uid://b31r3ifyxvtlf" path="res://Blue-Cat.png" id="2_4a2bk"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="2_6ke6d"]
+[ext_resource type="PackedScene" uid="uid://73fq3i5rxijg" path="res://sprite_2d_2.tscn" id="3_3pus3"]
+[ext_resource type="Script" path="res://sprite_2d_2.gd" id="5_5e75i"]
+[ext_resource type="Script" path="res://button.gd" id="6_e8vpg"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(574, 313)
+scale = Vector2(0.954089, 0.917892)
+texture = ExtResource("1_3q0pb")
+script = ExtResource("2_6ke6d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-386.881, 247.195)
+scale = Vector2(0.449357, 0.403302)
+texture = ExtResource("2_4a2bk")
+
+[node name="Sprite2D2" parent="." instance=ExtResource("3_3pus3")]
+script = ExtResource("5_5e75i")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+anchor_top = -0.019
+anchor_right = 0.179
+anchor_bottom = 0.309
+offset_left = 302.907
+offset_top = 142.47
+offset_right = 264.107
+offset_bottom = 54.0699
+text = "Click To Feed "
+script = ExtResource("6_e8vpg")
